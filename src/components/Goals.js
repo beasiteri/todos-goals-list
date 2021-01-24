@@ -28,7 +28,7 @@ class Goals extends React.Component {
       return (
         <div>
           <h1>Goals</h1>
-          <input type='text' placeholder='Add Goal' ref={(input) => this.input = input} />
+          <i                                                                                                                                                                                                                                                                                                                                                                                                                          nput type='text' placeholder='Add Goal' ref={(input) => this.input = input} />
           <button onClick={this.addItem}>Add Goal</button>
 
           <List items={this.props.goals} remove={this.removeItem} toggle={this.toggleItem} />
