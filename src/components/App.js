@@ -19,8 +19,7 @@ class App extends React.Component {
     }
 
     return (
-      <div>
-        Hello World
+      <div className="app">
         <ConnectedTodos />
         <ConnectedGoals />
       </div>
