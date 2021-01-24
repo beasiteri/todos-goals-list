@@ -26,11 +26,12 @@ class Goals extends React.Component {
 
   render() {
       return (
-        <div>
+        <div className="goals">
           <h1>Goals</h1>
-          <i                                                                                                                                                                                                                                                                                                                                                                                                                          nput type='text' placeholder='Add Goal' ref={(input) => this.input = input} />
-          <button onClick={this.addItem}>Add Goal</button>
-
+          <div className="d-inline-flex w-100 mb-3">
+            <input className="form-control" type='text' placeholder='Add Goal' ref={(input) => this.input = input} />
+            <button type="button" className="btn btn-dark w-50 ml-2" onClick={this.addItem}>Add Goal</button>
+          </div>
           <List items={this.props.goals} remove={this.removeItem} toggle={this.toggleItem} />
         </div>
       )

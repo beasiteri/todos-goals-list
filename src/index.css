@@ -1,4 +1,33 @@
 .app {
-  margin: 0 auto;
-  width: 60%;
+  margin: 50px auto;
+  width: 400px;
+}
+
+.todos,
+.goals {
+  background-color:#b9dcec;
+  padding: 30px 50px;
+  -webkit-box-shadow: 6px 7px 12px -3px #000000; 
+  box-shadow: 6px 7px 12px -3px #000000;
+}
+
+.todos {
+  margin-bottom: 40px;
+}
+
+ul {
+  padding: 5px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: red;
 }

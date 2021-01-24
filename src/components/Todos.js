@@ -28,11 +28,12 @@ class Todos extends React.Component {
 
   render() {
       return (
-        <div>
+        <div className="todos">
           <h1>Todo List</h1>
-          <input type='text' placeholder='Add Todo'ref={(input) => this.input = input} />
-          <button onClick={this.addItem}>Add Todo</button>
-
+          <div className="w-100 d-inline-flex mb-3">
+            <input className="form-control" type='text' placeholder='Add Todo'ref={(input) => this.input = input} />
+            <button type="button" className="btn btn-dark w-50 ml-2" onClick={this.addItem}>Add Todo</button>
+          </div>
           <List items={this.props.todos} remove={this.removeItem} toggle={this.toggleItem} />
         </div>
       )
