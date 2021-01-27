@@ -1,4 +1,4 @@
-# "List of Todos and Goals" app
+# "List of Todos and Goals" app - Udacity Learning Projects
 
 ## About Project
 This mini-project is react and redux based web app part of the React Nanodegree program.
